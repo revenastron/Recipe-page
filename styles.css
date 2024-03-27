@@ -9,7 +9,7 @@ body {
 }
 .card {
     width: 46vw;
-    margin: 50px auto 20px;
+    margin: 80px auto 20px;
     background-color: hsl(0, 0%, 100%);
     padding: 38px 37px 0;
     border-radius: 12px;
@@ -29,6 +29,7 @@ img {
 .section {
 	margin-top: 25px;
 	padding-bottom: 20px;
+	border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
 .sectionTitle {
@@ -69,6 +70,12 @@ ol li::marker {
 	border-collapse: collapse;
 	width: 100%;
 }
+.table1 tr td{
+	border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+.table1 tr:last-child td{
+	border-bottom: none;
+}
 .table1 td {
 	padding: 12px 17px;
 }
@@ -84,26 +91,6 @@ ol li::marker {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
-
-/********Border color variation*********/
-
-.section:nth-of-type(2) { /*Selects the second div*/
-	border-bottom: 1px solid hsl(30, 18%, 94%);
-}
-.section:nth-of-type(3) {	
-	border-bottom: 1px solid hsl(30, 18%, 81%);
-}
-
-.table1 tr:first-child td{
-	border-bottom: 1px solid hsl(30, 18%, 93%);
-}
-.table1 tr:nth-child(2) td{
-	border-bottom: 1px solid hsl(30, 18%, 87%);
-}
-.table1 tr:nth-child(3) td{
-	border-bottom: 1px solid hsl(30, 18%, 81%);
-}
-
 
 /********************************Mobile view***********************************/
 @media (max-width : 750px) {
